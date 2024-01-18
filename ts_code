@@ -1,0 +1,62 @@
+let username = "shanto";
+let age: number = 25;
+let address:string = "Sylhet"
+console.log(age);
+console.log(username);
+console.log(address);
+
+let first_name : string = "shanto";
+let last_name : string = "Rana"
+
+console.log(first_name.concat(last_name));
+//Here also some others method 
+
+function add(nu1:number,nu2:number) {
+    console.log(nu2+nu1);
+}
+add(20,30);
+
+let userHandle : string | number = "sj"; //Union
+//userHandle =12; both string and number are support 
+
+
+let collectionOfUsername : string[] = ["shan","shan1","shan2","shan3","shan4"];
+console.log(collectionOfUsername[0]);
+
+//tuple or MAP
+
+let users : [number,string];
+
+users = [1,"shanto"];
+users.push(2,"Rafi");
+users.push(3,"Rafi");
+users.push(4,"Rafi");
+users.push(5,"Rafi");
+
+console.log(users);
+
+
+//enum Type --> 1.Numeric 2.string 3.heteroginious 
+
+//1.Numeric
+enum enType {
+    read =1,
+    save =3,
+    delete,
+}
+
+console.log(enType);
+
+//2.string
+
+enum senType {
+    read = "Shanto",
+    update = "Rana",
+}
+
+console.log(senType.read);
+console.log(senType.update);
+
+
+
+

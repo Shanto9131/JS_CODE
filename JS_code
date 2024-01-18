@@ -1,0 +1,92 @@
+console.log("Hello");
+
+console.log(true);
+
+var num = 10;
+console.log(num);
+console.log("string",10.10,true,false,null);
+
+
+
+function makecoffe ( sugar , milk ) {
+    var ins = "Boil water ";
+    ins+=" pout cup";
+    ins+="add"+sugar+"spoons of sugar";
+    ins+="add"+milk;
+    
+    return ins;
+}
+console.log(makecoffe(2 ,20));
+
+var car = {
+    color  : "Red",
+    speed : 200,
+    made : "Volvo",
+    engine : {
+        size : 20,
+        make : "BMW",
+        fuel : "pet",
+        pist : [{maker : "NMQ"},{maker : "jhs"}]
+
+    },
+    drive : function() {return "drive";}
+};
+
+
+var array = ["String",
+    100 , 
+    ["embed",200],
+    {car : "ford"},
+    function() {return "drive ";}
+];
+
+
+console.log(car.made);
+
+function name(fullname = {fist:"shanto",last:"rana"} ) {
+    return fullname.fist + fullname.last;
+}
+
+
+console.log(myname,printn());
+
+var myname = "shanto";
+function printn() {
+    return "hello";
+}
+
+
+function Appl(x ,y,score) {
+     this.x = x;
+     this.y = y;
+    this.score = score;
+
+    return this;
+}
+var app1 = new Appl(10,20,400);
+
+function Apple (color,weight) {
+    this.color = color;
+    this.weight = weight;
+   
+
+}
+Apple.prototype = {
+    eat : function() {return "eat apple";},
+    throw : function(){return "throw apple";}
+
+}
+
+var appp1 = new Apple("any",90);
+var app2 = new Apple("hlw",1029);
+
+ console.log(document.getElementById('hello').innerHTML += "hi" );
+
+
+console.dir(document.getElementById('hello'));
+
+ 
+
+
+
+
